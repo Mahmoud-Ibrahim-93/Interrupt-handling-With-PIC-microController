@@ -1,0 +1,7 @@
+[PROJECTS]
+Count=3
+Project0=C:\Users\Mahmoud Ibrahim\Desktop\Project\Pin interrupt Solution\PIN_INTERRUPT.mcppi
+Project1=..\Example 1 External interrupt\External Interrupt.mcppi
+Project2=Timer Interrupt.mcppi
+[ActiveProject]
+Index=2
