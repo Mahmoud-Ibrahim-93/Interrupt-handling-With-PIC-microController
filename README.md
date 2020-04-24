@@ -189,6 +189,9 @@ Timer0 time period = 4 / FOSC
 FOSC: frequency of external Crystal oscillator
 number of tics = 256 – TMR0 stating value  
 prescaler value depends on the PSA0 PSA1 PSA2 values which is according to the datasheet  
+
+ ![](Images/Prescalar.png)
+ 
  
 Bit Value: PS2 PS1 PS0
 The general formula is 
@@ -209,8 +212,13 @@ Example 2: Implementing a timer interrupt
 	The schematic design is easy enough just a 2*16 LCD connected to the B pins (for further detail check the MicroC PRO Help menu )  
  ![Board Connection](https://user-images.githubusercontent.com/12980543/54075812-63578900-42ac-11e9-813c-dcd2e7e27299.png)  
 
-![Board Connection](https://user-images.githubusercontent.com/12980543/54075831-b7626d80-42ac-11e9-8545-0492f8ce6f1a.png)  
+![Board Connection](https://user-images.githubusercontent.com/12980543/54075831-b7626d80-42ac-11e9-8545-0492f8ce6f1a.png) 
+
+
 https://youtu.be/HQTTesUVABI  
+
+
+![](Images/Timer%20Code.png)
 
 ## 5.	Task1  
 - Apply the skills you gained in this Lab to make a system that uses the PIC16F877a. An interrupt is executed when the temperature reaches 50 degrees or higher. The ISR sends a signal that operates the fan and keeps working until the temperature is back below 50 degrees. Also, include a timer interrupt that is used to display the elapsed time since the last time the fan cooling system was operating. (Hint you can use the TMR0 interrupt with the INTE at pin B0 or RB interrupt at any pin in B4:7) The schematic should look something similar to this.  
