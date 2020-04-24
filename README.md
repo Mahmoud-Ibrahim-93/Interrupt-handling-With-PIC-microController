@@ -107,9 +107,9 @@ In the following pages, we shall explore in some detail the interrupts available
  
  ![Board Connection](https://user-images.githubusercontent.com/12980543/54075643-5f2a6c00-42aa-11e9-9d7d-285678d9b07f.png)
  
-#### •	External (Enabled/disabled by setting bit <4> bit in Register INTCON) which is named INTE. Occurs when an input changes on PORTB<pin 0>. It sets flag bit, INTF which is no 1 in register INTCON.
+#### •	External (Enabled by setting bit <4> bit in Register INTCON) which is named INTE. Occurs when on a rising edge (By default) on PORTB<pin 0>. It sets the INTF flag bit. INTF which is no 1 in register INTCON.
 #### •	Timer 0 (Enabled by setting bit TMR0IE no <5> in Register INTCON)
-#### •	RB Port Change (Enabled/disabled by setting bit <3> bit in Register INTCON) which is named RBIE. Occurs when an input changes on PORTB<pin 4 to 7>. It sets flag bit, RBIF which is no 0 in register INTCON.  
+#### •	RB Port Change (Enabled by setting bit <3> in Register INTCON) which is named RBIE. Occurs when an input changes on PORTB<pin 4 to 7>. It sets RBIF flag bit. RBIF which is no 0 in register INTCON.  
 •	Timer 1 (Enabled by setting bit 0 in Register PIE1)  
 •	Parallel Slave Port Read/Write (used when interfacing with another µp Enabled by setting bit <7> in Register PIE1)  
 •	A/D Converter (Enabled by setting bit <6> in Register PIE1)  
